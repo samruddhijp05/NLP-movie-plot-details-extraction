@@ -5,7 +5,7 @@ import streamlit.components.v1 as components
 
 
 st.markdown("<h1 style='text-align: center; color: blue;'>Moviepro.ai</h1>", unsafe_allow_html=True)
-st.write("## Organize your movie scripts, powered by AI.")
+st.write("## Organize your movie scripts using AI technology.")
 
 movie_plots_path = "American_Movie_Plots_2005_2021_v1.csv"
 
@@ -35,12 +35,12 @@ prev, middle ,next = st.columns([2, 10, 2])
 if st.session_state.page < last_page:
     next.button(">", on_click=next_page)
 else:
-    next.write("")  # this makes the empty column show up on mobile
+    next.write("")  
 
 if st.session_state.page > 0:
     prev.button("<", on_click=prev_page)
 else:
-    prev.write("")  # this makes the empty column show up on mobile
+    prev.write("")  
 
 middle.write(f"Page {1+st.session_state.page} of {last_page}")
 
