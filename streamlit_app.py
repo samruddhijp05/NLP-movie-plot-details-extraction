@@ -7,7 +7,7 @@ import streamlit.components.v1 as components
 st.markdown("<h1 style='text-align: center; color: blue;'>Moviepro.ai</h1>", unsafe_allow_html=True)
 st.write("## Organize your movie scripts using AI technology.")
 
-movie_plots_path = "American_Movie_Plots_2005_2021_v1.csv"
+movie_plots_path = "American_Movie_Plots_2005_2021_v1.1.csv"
 
 @st.cache
 def load_data():
